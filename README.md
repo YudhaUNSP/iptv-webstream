@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IPTV Streaming App
 
-## Getting Started
+A modern IPTV streaming web app built with **Next.js 13**, **React 18**, and **HLS.js**.  
+Easily stream live TV channels with a clean UI and smooth playback.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ⚡️ Fast Next.js 13 app (supports SSR & static export)
+- 📺 HLS (.m3u8) stream support via HLS.js
+- 🖼️ Channel poster & info display
+- 🎛️ Responsive video player
+- 🛡️ CORS-friendly setup
+- 🌓 Dark background for immersive viewing
+
+## 🛠️ Tech Stack
+
+- [Next.js 13](https://nextjs.org/)
+- [React 18](https://react.dev/)
+- [HLS.js](https://github.com/video-dev/hls.js/)
+- [Video.js](https://videojs.com/) (optional)
+
+## 📦 Installation
+
+```sh
+git clone https://github.com/yourusername/iptv.git
+cd iptv
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧑‍💻 Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗️ Production Build
 
-## Learn More
+```sh
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## ☁️ Deploy to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push your code to GitHub.
+2. [Import your repo to Vercel](https://vercel.com/import).
+3. No need to change build command (Vercel auto-detects Next.js):
+   - **Build Command:** `npm run build`
+   - **Output Command:** `npm start`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+components/
+  VideoPlayer.js   # Main video player component
+pages/
+  index.js         # Home page
+public/            # Static assets
+next.config.js     # Next.js config
+package.json
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Credits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [iptv-org](https://github.com/iptv-org/iptv) for channel sources
+- [HLS.js](https://github.com/video-dev/hls.js)
+- [Next.js](https://nextjs.org/)
+
+---
+
+**Enjoy streaming!** 🚀
